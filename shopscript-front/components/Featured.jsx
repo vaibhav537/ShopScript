@@ -20,9 +20,6 @@ export default function Featured({ product }) {
   function addFeaturedToCart() {
     addProduct(product._id);
   }
-
-  console.log(product);
-
   return (
     <Bg>
       <Center>

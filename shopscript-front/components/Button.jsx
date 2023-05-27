@@ -1,13 +1,12 @@
 import { styled, css } from "styled-components";
-import { Comfortaa } from "next/font/google";
 
-const inter = Comfortaa({ subsets: ["latin"] });
 
 export const ButtonStyle = css`
   display: flex;
   align-items: center;
   justify-content: center;
   border: 0;
+  font-family: 'Comfortaa', cursive;
   transition: all 0.5s ease-in-out;
   padding: 5px 15px;
   margin-right: 10px;
@@ -65,7 +64,7 @@ ${ButtonStyle}`;
 
 export default function Button({ children, ...rest }) {
   return (
-    <StyledButton className={inter.className} {...rest}>
+    <StyledButton {...rest}>
       {children}
     </StyledButton>
   );

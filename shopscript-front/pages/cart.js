@@ -1,4 +1,3 @@
-import { Comfortaa } from "next/font/google";
 import Center from "@/components/Center";
 import Header from "@/components/Header";
 import { useContext, useEffect, useState } from "react";
@@ -26,8 +25,6 @@ import {
 } from "@/styles/CartStyles";
 import Head from "next/head";
 import { useRouter } from "next/router";
-
-const inter = Comfortaa({ subsets: ["latin"] });
 
 export default function cart() {
   const [name, setName] = useState("");
@@ -132,9 +129,7 @@ export default function cart() {
                   <EmptyCartMessage>
                     {" "}
                     Your Cart is Empty
-                    <GobackButton href={"/"} className={inter.className}>
-                      Add Items
-                    </GobackButton>
+                    <GobackButton href={"/"}>Add Items</GobackButton>
                   </EmptyCartMessage>
                 )}
                 {products?.length > 0 && (
@@ -252,10 +247,7 @@ export default function cart() {
                     onChange={(ev) => setCountry(ev.target.value)}
                     autoComplete="off"
                   />
-                  <StyledButton
-                    className={inter.className}
-                    onClick={goToPayment}
-                  >
+                  <StyledButton onClick={goToPayment}>
                     Continue To Payment
                   </StyledButton>
                 </Box>

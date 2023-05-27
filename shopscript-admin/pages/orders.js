@@ -22,6 +22,9 @@ const orders = () => {
                 Date
               </th>
               <th scope="col" className="px-6 py-3">
+                Paid
+              </th>
+              <th scope="col" className="px-6 py-3">
                 Recipient
               </th>
               <th scope="col" className="px-6 py-3">
@@ -42,6 +45,16 @@ const orders = () => {
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                     >
                       {new Date(order.createdAt).toLocaleString()}
+                    </td>
+                    <td
+                      scope="row"
+                      className="px-6 py-4 font-medium  whitespace-nowrap "
+                    >
+                      {order.paid ? (
+                        <span className="text-green-700">YES</span>
+                      ) : (
+                        <span className="text-red-600">NO</span>
+                      )}
                     </td>
                     <td className="px-6 py-4">
                       {order.name}
