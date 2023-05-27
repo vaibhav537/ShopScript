@@ -36,7 +36,38 @@ yarn run dev
 ```
 6. Open your browser and navigate to http://localhost:3000 to access the admin dashboard.
 7. To set up the ecommerce site, navigate to the **shopscript-front** directory:
+8. Open new Window and Terminal and type command:
 ```
-cd ..
 cd shopscript-front
 ```
+9. Install dependencies:
+```
+yarn install
+```
+10. Configure the Stripe payment gateway by adding your Stripe API keys. Refer to the Stripe documentation for details.
+11. Start the development server:
+```
+yarn run dev
+```
+13. Open your browser and navigate to http://localhost:3000 to access the ecommerce website.
+
+
+### Contributing
+We welcome contributions to improve ShopScript! To contribute, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the main repository's develop branch.
+
+Please ensure your code adheres to the coding conventions and style guide specified in the repository.
+
+### License
+
+This project is licensed under the **MIT License**.
+
+### Contact
+
+If you have any questions or suggestions regarding ShopScript, please feel free to contact us at vaibhavmali537@gmail.com. We appreciate your feedback and support!
+
+***Happy shopping!***
